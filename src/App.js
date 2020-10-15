@@ -1,11 +1,13 @@
 import React from 'react';
 import List from './Components/List/List';
+import Navigation from './Components/Navigation/Navigation';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <List></List>
+      <Navigation />
+      {/* <List/> */}
     </div>
   );
 }
