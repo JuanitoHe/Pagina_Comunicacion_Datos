@@ -51,6 +51,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     padding: theme.spacing(3),
   },
+  active: {
+    backgroundColor: '#3f51b5'
+  }
 }));
 
 function ResponsiveDrawer(props) {
@@ -70,9 +73,14 @@ function ResponsiveDrawer(props) {
       <Divider />
       <List>
         {ArchivosDeAlumnos.map((alumno) => (
-          <ListItem button key={alumno.nombreAlumno} onClick={() => {
-            cambiarAlumnoSeleccionado(alumno)
-          }}>
+          <ListItem
+            button
+            key={alumno.nombreAlumno}
+              onClick={() => {
+              cambiarAlumnoSeleccionado(alumno)
+            }}
+            className={classes[alumno.nombreAlumno == alumnoSeleccionado.nombreAlumno ? 'active' : '']}
+          >
             <ListItemIcon><InboxIcon /></ListItemIcon>
             <ListItemText primary={alumno.nombreAlumno} />
           </ListItem>
