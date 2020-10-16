@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 650,
   },
   tableContainer: {
-    width: 'calc(100vw - 24px)'
+    width: 'calc(100vw - 44px)'
   },
 }));
 
