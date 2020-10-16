@@ -9,11 +9,14 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   table: {
     minWidth: 650,
   },
-});
+  tableContainer: {
+    width: 'calc(100vw - 44px)'
+  },
+}));
 
 export default function BasicTable(props) {
   function createData(url, nombreTarea, fecha, correo) {
@@ -35,7 +38,7 @@ export default function BasicTable(props) {
   }  
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} className={classes.tableContainer}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
