@@ -5,14 +5,34 @@ export default [
     correo: 'juan@juan.com',
     tareas: [
       {
-        nombre: 'T5_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN',
+        nombre: 'T1_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN',
         fecha: '15/10/2020',
-        url: '/Files/T5_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN.pdf'
+        url: '/Files/T1_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN.pdf'
+      },
+      {
+        nombre: 'T2_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN',
+        fecha: '15/10/2020',
+        url: '/Files/T2_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN.pdf'
+      },
+      {
+        nombre: 'T3_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN',
+        fecha: '15/10/2020',
+        url: '/Files/T3_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN.pdf'
       },
       {
         nombre: 'T5_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN',
         fecha: '15/10/2020',
         url: '/Files/T5_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN.pdf'
+      },
+      {
+        nombre: 'T6_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN',
+        fecha: '15/10/2020',
+        url: '/Files/T6_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN.pdf'
+      },
+      {
+        nombre: 'T7_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN',
+        fecha: '15/10/2020',
+        url: '/Files/T7_COMUNICACION_DE_DATOS_2CM42_HERNANDEZ_VILLALOBOS_JUAN.pdf'
       },
     ]
   },
@@ -34,7 +54,7 @@ export default [
     ]
   },
   {
-    nombreAlumno: 'Juan',
+    nombreAlumno: 'Juan J',
     avatar: 'juan.png',
     correo: 'juan@juan.com',
     tareas: [
@@ -51,7 +71,7 @@ export default [
     ]
   },
   {
-    nombreAlumno: 'Juan',
+    nombreAlumno: 'Juan H',
     avatar: 'juan.png',
     correo: 'juan@juan.com',
     tareas: [
@@ -68,7 +88,7 @@ export default [
     ]
   },
   {
-    nombreAlumno: 'Juan',
+    nombreAlumno: 'Juan U',
     avatar: 'juan.png',
     correo: 'juan@juan.com',
     tareas: [
@@ -85,7 +105,7 @@ export default [
     ]
   },
   {
-    nombreAlumno: 'Juan',
+    nombreAlumno: 'Jua n',
     avatar: 'juan.png',
     correo: 'juan@juan.com',
     tareas: [
