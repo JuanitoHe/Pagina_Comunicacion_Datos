@@ -6,7 +6,6 @@ import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -17,6 +16,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Table from '../Table/Table'
 import ArchivosDeAlumnos from '../../Utils/FileMap'
+import Avatar from '@material-ui/core/Avatar';
 
 const drawerWidth = 240;
 
@@ -52,8 +52,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
   },
   active: {
-    color: 'white',
-    backgroundColor: '#3f51b5'
+    backgroundColor: 'rgba(0, 0, 0, 0.12)'
   }
 }));
 
@@ -80,9 +79,9 @@ function ResponsiveDrawer(props) {
               onClick={() => {
               cambiarAlumnoSeleccionado(alumno)
             }}
-            className={classes[alumno.nombreAlumno == alumnoSeleccionado.nombreAlumno ? 'active' : '']}
+            className={classes[alumno.nombreAlumno === alumnoSeleccionado.nombreAlumno ? 'active' : '']}
           >
-            <ListItemIcon><InboxIcon /></ListItemIcon>
+            <ListItemIcon><Avatar alt={alumno.nombreAlumno} src={alumno.avatar} /></ListItemIcon>
             <ListItemText primary={alumno.nombreAlumno} />
           </ListItem>
         ))}
