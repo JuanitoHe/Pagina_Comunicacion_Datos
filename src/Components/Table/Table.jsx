@@ -23,7 +23,7 @@ export default function BasicTable(props) {
   const alumnoSeleccionado = props.alumnoSeleccionado
   const correo = alumnoSeleccionado.correo
   const rows = [];
-  alumnoSeleccionado.tareas.map((tarea) => {
+  alumnoSeleccionado.tareas.forEach((tarea) => {
     rows.push(
       createData(tarea.url, tarea.nombre, tarea.fecha, correo)
     )
